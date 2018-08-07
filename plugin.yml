@@ -1,0 +1,5 @@
+name: CustomJoinNQuit
+main: CustomJoinNQuit\Main
+version: 1.0
+api: 3.0.0, 3.0.1, 3.0.2
+author: zChqoS
