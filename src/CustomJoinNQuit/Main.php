@@ -16,14 +16,16 @@ use pocketmine\inventory\Inventory;
 
 class Main extends PluginBase implements Listener{
 
-public function onEnable(){
+public function onEnable()
+{
 
 $this->getServer()->getPluginManager()->registerEvents($this, $this);
 $this->getServer()->getLogger()->info("§aJoin§fN§cQuit §aActivated");
 
 }
 
-public function onJoin(PlayerJoinEvent $event){
+public function onJoin(PlayerJoinEvent $event)
+{
 
 $player = $event->getPlayer();
 $name = $player->getName();
@@ -32,7 +34,8 @@ $this->getServer()->broadcastMessage("§0[§b*§0] §a" . $name);
 
 }
 
-public function onQuit(PlayerQuitEvent $event){
+public function onQuit(PlayerQuitEvent $event)
+{
 
 $player = $event->getPlayer();
 $name = $player->getName();
