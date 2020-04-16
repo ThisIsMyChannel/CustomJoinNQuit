@@ -12,6 +12,7 @@ use pocketmine\event\Event;
 use pocketmine\Player;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerQuitEvent;
+use pocketmine\inventory\Inventory;
 
 class Main extends PluginBase implements Listener{
 
@@ -35,6 +36,7 @@ public function onQuit(PlayerQuitEvent $event){
 
 $player = $event->getPlayer();
 $name = $player->getName();
+$player->getInventory()->clearAll();
 $event->setQuitMessage("");
 $this->getServer()->broadcastMessage("§0[§c*§0] §c" . $name);
 
