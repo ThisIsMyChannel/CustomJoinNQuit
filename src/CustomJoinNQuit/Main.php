@@ -40,6 +40,7 @@ public function onQuit(PlayerQuitEvent $event)
 $player = $event->getPlayer();
 $name = $player->getName();
 $player->getInventory()->clearAll();
+$player->getArmorInventory()->clearAll()
 $event->setQuitMessage("");
 $this->getServer()->broadcastMessage("§0[§c*§0] §c" . $name);
 
