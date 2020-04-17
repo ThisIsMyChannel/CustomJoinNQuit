@@ -20,7 +20,7 @@ public function onEnable()
 {
 
 $this->getServer()->getPluginManager()->registerEvents($this, $this);
-$this->getServer()->getLogger()->info("§aJoin§fN§cQuit §aActivated");
+$this->getLogger()->info("§aJoin§fN§cQuit §aActivated");
 
 }
 
